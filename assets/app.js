@@ -62,10 +62,10 @@ $(function() {
     },
     index: function() {
       new FT.TweetsList({ collection: FT.TWEETS });
-      new FT.PostNew();
     }
   }));
 
+  new FT.PostNew();
   Backbone.history.start();
 });
 
