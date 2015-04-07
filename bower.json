@@ -1,0 +1,26 @@
+{
+  "name": "faux-twi",
+  "version": "0.0.1",
+  "homepage": "https://github.com/falsefalse/faux-twi",
+  "authors": [
+    "Ilya Furman <smashlong@gmail.com>"
+  ],
+  "description": "test task",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "zepto": "~1.1.6"
+  }
+}
