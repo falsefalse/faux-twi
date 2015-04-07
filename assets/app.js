@@ -28,11 +28,10 @@ FT.PostNew = Backbone.View.extend({
       acc[pair.name] = pair.value;
       return acc;
     }, {});
-
     form.timestamp = (new Date).toISOString();
-    FT.TWEETS.add( new FT.TweetModel(form) );
 
-    FT.app.navigate('', { trigger: true, replace: true });
+    FT.TWEETS.add( new FT.TweetModel(form) );
+    Backbone.history.loadUrl('');
 
     event.preventDefault();
   }
