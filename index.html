@@ -9,6 +9,27 @@
   <script src="/bower_components/backbone/backbone.js"></script>
 </head>
 <body>
-  <h1>Hello there</h1>
+  <h2>Post a new one</h2>
+  <form action="/add" method="POST" class="post-new">
+    <p>
+      <textarea placeholder="What's on your mind?" name="body">woot woot!</textarea>
+    </p>
+    <button type="submit">Send</button>
+  </form>
+
+  <h2>Your tweets</h2>
+  <ul class="tweets-list"></ul>
+
+  <script type="text/template" id="tpl-tweet-item">
+    <li>
+      <p><%= body %></p>
+      <small><%= timestamp %></small>
+    </li>
+  </script>
+  <script type="text/javascript">
+    var FT = {};
+  </script>
+  <script src="/assets/sync.js"></script>
+  <script src="/assets/app.js"></script>
 </body>
 </html>
